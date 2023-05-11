@@ -6,7 +6,7 @@ document.getElementById("buttonImages").addEventListener("click", async() =>{
     const pj = document.getElementById("nombre").value;
     const imagenesPjTemplate = personajes
     .find((p) => p.name == pj)
-    .imagenes.map((i) => `<img width="200" src="../assets/imgs/${pj}/${i}" />`)
+    .imagenes.map((i) => `<img width="200" src="./imgs/${pj}/${i}" />`)
     .join("");
 
     //Nuevo valor a div con clase personajes
